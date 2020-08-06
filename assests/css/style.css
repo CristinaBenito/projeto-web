@@ -1,0 +1,173 @@
+html, h3 {
+    font-family: 'lato';
+    color: #242424;
+}
+
+p {
+    color: #383838;
+}
+
+.container {
+    width: 100%;
+}
+
+.bg {
+    background-image: url("../imgs/");
+}
+
+.nav section {
+    display: inline-block;
+    margin-left: 2em;
+    padding: 1em;
+    font-size: 13px;
+}
+
+.nav section ul {
+    cursor: pointer;
+    list-style: none;
+    display: inline-block;
+}
+
+.nav section ul li {
+    justify-content: center;
+}
+
+.my-hover li:hover {
+    display: flex;
+    align-items: flex-end;
+    width: 120%;
+    height: 2px;
+    line-height: 2em;
+    border-radius: 20px;
+    background-color: #67AD44; 
+  
+}
+
+.nav-image img{
+    max-width: 13em;
+    margin: 2.5em 7em 0em 4em;
+}
+
+.my-button {
+    font-size: 14px;
+    text-align: center;
+}
+
+.my-button-colorless {
+    background-color: #ffffff;
+    border: 2px solid #68ad43;
+}
+
+.my-button-colorless:hover {
+    background-color: #68ad43;
+    color: #ffffff;
+}
+
+.nav-button {
+    width: 8em; 
+    padding: 0.7em 0.5em;  
+}
+
+.my-button-green {
+    background-color: #68ad43;
+    color: #ffffff;
+}
+
+.my-button-green:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.button-info {
+    width: 18em;
+    padding: 1.6em 0.2em;
+    cursor: pointer;
+}
+
+.button-more {
+    width: 10em;
+    padding: 1.6em 0.2em;
+    cursor: pointer;
+}
+
+.my-flex {
+    display: flex;
+}
+
+.my-justify-content-start {
+    justify-content: flex-start;
+}
+
+.my-justify-content-between {
+    justify-content: space-between;
+}
+
+.my-justify-content-end {
+    justify-content: flex-end;
+}
+
+.my-align-items-start {
+    align-items: flex-start;
+}
+
+.my-align-items-center {
+    align-items: center;
+}
+
+.my-align-items-end {
+    align-items: flex-end;
+}
+
+.my-flex-column {
+    flex-direction: column;
+}
+
+.my-width-100 {
+    width: 100%;
+}
+
+.slogan {
+    width: 45em;
+    margin-top: 5em;
+}
+
+.slogan h3 {
+    text-align: center;
+    text-transform: uppercase;
+    word-wrap: break-word;
+    font-size: 2.2em;
+
+}
+
+.buttons {
+    margin-top: 3em;
+    text-align: center;
+}
+
+.display-col {
+    margin: 1em 6em;
+ }
+ 
+
+.text-col {
+   margin: 1.5em 1.5em;
+   padding: 1em;
+   line-height: 25px;
+   text-align: justify;
+}
+
+.text-col h4 {
+    font-size: 1.3em;
+    margin-bottom: 2em;
+}
+
+
+.my-h4:after {
+    content: ' ';
+    display: flex;
+    width: 30%;
+    height: 2px;
+    margin-top: 10px;
+    border-radius: 20px;
+    background-color: #67AD44;
+}
