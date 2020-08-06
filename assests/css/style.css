@@ -1,3 +1,7 @@
+body {
+    margin: 0;
+    opacity: 0.7;
+}
 html, h3 {
     font-family: 'lato';
     color: #242424;
@@ -7,18 +11,37 @@ p {
     color: #383838;
 }
 
-.container {
-    width: 100%;
+.text-white {
+    color: #ffffff;
 }
 
 .bg {
-    background-image: url("../imgs/");
+    background-image: url("../imgs/animation/img1.jpg");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    animation-name: animation;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-delay: 5s;
+}
+
+@keyframes animation {
+    0%   { background-image: url("../imgs/animation/img1.jpg");}
+    15%  { background-image: url("../imgs/animation/img2.jpg");}
+    35%  { background-image: url("../imgs/animation/img3.jpg");}
+    50%  { background-image: url("../imgs/animation/img4.jpg");}
+    70%  { background-image: url("../imgs/animation/img5.jpg");}
+    85%  { background-image: url("../imgs/animation/img6.jpg");}
+    100% { background-image: url("../imgs/animation/img7.jpg");}
+
 }
 
 .nav section {
     display: inline-block;
     margin-left: 2em;
-    padding: 1em;
     font-size: 13px;
 }
 
@@ -40,7 +63,6 @@ p {
     line-height: 2em;
     border-radius: 20px;
     background-color: #67AD44; 
-  
 }
 
 .nav-image img{
@@ -51,6 +73,7 @@ p {
 .my-button {
     font-size: 14px;
     text-align: center;
+    margin: 4px;
 }
 
 .my-button-colorless {
@@ -69,6 +92,7 @@ p {
 }
 
 .my-button-green {
+    border: 2px solid #68ad43;
     background-color: #68ad43;
     color: #ffffff;
 }
@@ -80,13 +104,13 @@ p {
 
 .button-info {
     width: 18em;
-    padding: 1.6em 0.2em;
+    padding: 1.7em 0.2em;
     cursor: pointer;
 }
 
 .button-more {
     width: 10em;
-    padding: 1.6em 0.2em;
+    padding: 1.7em 0.2em;
     cursor: pointer;
 }
 
@@ -127,8 +151,8 @@ p {
 }
 
 .slogan {
-    width: 45em;
-    margin-top: 5em;
+    width: 60em;
+    margin-top: 4.6em;
 }
 
 .slogan h3 {
@@ -136,11 +160,13 @@ p {
     text-transform: uppercase;
     word-wrap: break-word;
     font-size: 2.2em;
-
+    line-height: 1.5em;
+    letter-spacing: 0.1em;
+    font-weight: 400;
 }
 
 .buttons {
-    margin-top: 3em;
+    margin-top: 1em;
     text-align: center;
 }
 
@@ -171,3 +197,4 @@ p {
     border-radius: 20px;
     background-color: #67AD44;
 }
+
