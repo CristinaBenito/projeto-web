@@ -22,6 +22,7 @@ p {
     height: 100vh;
     background-position: center;
     background-size: cover;
+    background-color: #272b2c;
     animation-name: animation;
     animation-duration: 20s;
     animation-iteration-count: infinite;
@@ -151,22 +152,35 @@ p {
 }
 
 .slogan {
-    width: 60em;
+    width: 70%;
     margin-top: 4.6em;
 }
 
 .slogan h3 {
     text-align: center;
     text-transform: uppercase;
-    word-wrap: break-word;
-    font-size: 2.2em;
+    font-size: 2.1em;
+    line-height: 1.5em;
+    letter-spacing: 0.1em;
+    font-weight: 400;
+}
+
+.info {
+    width: 52%;
+    margin-top: 1.5em;
+}
+
+.info h4 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.9em;
     line-height: 1.5em;
     letter-spacing: 0.1em;
     font-weight: 400;
 }
 
 .buttons {
-    margin-top: 1em;
+    margin-top: 2em;
     text-align: center;
 }
 
@@ -198,3 +212,11 @@ p {
     background-color: #67AD44;
 }
 
+.half-green img {
+    width: 100%;
+    margin-top: 1em;
+}
+
+.clients {
+    text-align: center;
+}
