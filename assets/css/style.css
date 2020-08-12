@@ -17,12 +17,12 @@ p {
 }
 
 .bg-mask {
-   background-image: url(assets/imgs/mask.png);
+   background-image: url(../imgs/mask.png);
    height: 100%;
 }
 
 .bg {
-    background-image: url("assets/imgs/animation/img1.jpg");
+    background-image: url("../imgs/animation/img1.jpg");
     background-repeat: no-repeat;
     width: 100%;
     height: 100vh;
@@ -36,13 +36,13 @@ p {
 }
 
 @keyframes animation {
-    0%   { background-image: url("assets/imgs/animation/img1.jpg");}
-    15%  { background-image: url("assets/imgs/animation/img2.jpg");}
-    35%  { background-image: url("assets/imgs/animation/img3.jpg");}
-    50%  { background-image: url("assets/imgs/animation/img4.jpg");}
-    70%  { background-image: url("assets/imgs/animation/img5.jpg");}
-    85%  { background-image: url("assets/imgs/animation/img6.jpg");}
-    100% { background-image: url("assets/imgs/animation/img7.jpg");}
+    0%   { background-image: url("../imgs/animation/img1.jpg");}
+    15%  { background-image: url("../imgs/animation/img2.jpg");}
+    35%  { background-image: url("../imgs/animation/img3.jpg");}
+    50%  { background-image: url("../imgs/animation/img4.jpg");}
+    70%  { background-image: url("../imgs/animation/img5.jpg");}
+    85%  { background-image: url("../imgs/animation/img6.jpg");}
+    100% { background-image: url("../imgs/animation/img7.jpg");}
 
 }
 
