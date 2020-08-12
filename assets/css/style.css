@@ -52,6 +52,14 @@ p {
     font-size: 13px;
 }
 
+.nav section a{
+    background: #383838;
+    display: none;
+    position: absolute;
+    right: 1em;
+    top: 1em;
+}
+
 .nav section ul {
     cursor: pointer;
     list-style: none;
@@ -239,6 +247,23 @@ p {
 }
 
 @media only screen and (min-width: 800px) and (max-width: 920px){
+    .nav section ul {
+        display: none;
+    }
+
+    .nav section a{
+        background: #383838;
+        display: block;
+        position: absolute;
+        right: 1em;
+        top: 1em;
+    }
+
+    .icon i:hover {
+        background: #383838;
+        color: #68ad43;
+    }
+
     .principal {
         margin-top: 5em;
         margin-bottom: 1em;
@@ -272,6 +297,23 @@ p {
 }
 
 @media only screen and (min-width: 751px) and (max-width: 799px){
+    .nav section ul {
+        display: none;
+    }
+
+    .nav section a{
+        background: #383838;
+        display: block;
+        position: absolute;
+        right: 1em;
+        top: 1em;
+    }
+    
+    .nav-image img{
+        max-width: 13em;
+        margin: 1em;
+    }
+
     .principal {
         margin-top: 5em;
         margin-bottom: 1em;
@@ -306,6 +348,23 @@ p {
 }
 
 @media only screen and (min-width: 621px) and (max-width: 750px){
+    .nav section ul {
+        display: none;
+    }
+
+    .nav section a{
+        background: #383838;
+        display: block;
+        position: absolute;
+        right: 1em;
+        top: 1em;
+    }
+
+    .nav-image img{
+        max-width: 13em;
+        margin: 1em;
+    }
+
     .principal {
         margin-top: 1em;
         margin-bottom: 1em;
@@ -336,6 +395,23 @@ p {
 }
 
 @media only screen and (min-width: 581px) and (max-width: 620px){
+    .nav section ul {
+        display: none;
+    }
+
+    .nav section a{
+        background: #383838;
+        display: block;
+        position: absolute;
+        right: 1em;
+        top: 1em;
+    }
+
+    .nav-image img{
+        max-width: 13em;
+        margin: 1em;
+    }
+
     .principal {
         margin-top: 4em;
         margin-bottom: 1em;
@@ -366,12 +442,46 @@ p {
 }
 
 @media only screen and (max-width: 580px) {
+    .nav section ul {
+        display: none;
+    }
+
+    .nav section a{
+        background: #383838;
+        display: block;
+        position: absolute;
+        right: 1em;
+        top: 1em;
+    }
+
+    .nav-image img{
+        max-width: 13em;
+        margin: 1em;
+    }
+
     .principal {
         margin-top: 0;
     }
 }
 
 @media only screen and (min-width: 415px) and (max-width: 580px){
+    .nav section ul {
+        display: none;
+    }
+
+    .nav section a{
+        background: #383838;
+        display: block;
+        position: absolute;
+        right: 1em;
+        top: 1em;
+    }
+
+    .nav-image img{
+        max-width: 13em;
+        margin: 1em;
+    }
+
     .buttons {
         margin-top: 2em;
     }
@@ -397,6 +507,23 @@ p {
 }
 
 @media only screen and (min-width: 377px) and (max-width: 414px){
+    .nav section ul {
+        display: none;
+    }
+
+    .nav section a{
+        background: #383838;
+        display: block;
+        position: absolute;
+        right: 1em;
+        top: 1em;
+    }
+
+    .nav-image img{
+        max-width: 13em;
+        margin: 1em;
+    }
+
     .buttons {
         margin-top: 1em;
     }
@@ -421,13 +548,24 @@ p {
 }
 
 
-@media only screen and (min-width: 272px) and (max-width: 376px){
-    .nav section {
-        display: inline-block;
-        margin: 0em;
-        font-size: 13px;
+@media only screen and (min-width: 272px) and (max-width: 376px){    
+   .nav section ul {
+        display: none;
     }
-    
+
+    .nav section a{
+        background: #383838;
+        display: block;
+        position: absolute;
+        right: 1em;
+        top: 1em;
+    }
+
+    .nav-image img{
+        max-width: 13em;
+        margin: 1em;
+    }
+
     .buttons {
         margin-top: 0.5em;
     }
@@ -452,17 +590,22 @@ p {
 }
 
 @media only screen and (max-width: 320px){
-    .nav section {
-        display: inline-block;
-        margin: 0em;
-        font-size: 13px;
+    .nav section ul {
+        display: none;
+    }
+
+    .nav section a{
+        background: #383838;
+        display: block;
+        position: absolute;
+        right: 1em;
+        top: 1em;
     }
 
     .nav-image img{
         max-width: 13em;
-        margin: 2em 5em 0em 3em;
+        margin: 1em;
     }
-    
     
     .buttons {
         margin-top: 0.5em;
@@ -489,10 +632,21 @@ p {
 
 
 @media only screen and (min-width: 0) and (max-width: 272) {
-    .nav section {
-        display: inline-block;
-        margin-left: 0em;
-        font-size: 13px;
+    .nav section ul {
+        display: none;
+    }
+
+    .nav section a{
+        background: #383838;
+        display: block;
+        position: absolute;
+        right: 1em;
+        top: 1em;
+    }
+
+    .nav-image img{
+        max-width: 13em;
+        margin: 1em;
     }
 
     .slogan {
@@ -538,5 +692,3 @@ p {
     }
 
 }
-
-
