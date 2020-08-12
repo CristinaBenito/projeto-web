@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    opacity: 0.7;
+   
 }
 html, h3 {
     font-family: 'lato';
@@ -16,8 +16,13 @@ p {
     color: #ffffff;
 }
 
+.bg-mask {
+   background-image: url(/assets/imgs/mask.png);
+   height: 100%;
+}
+
 .bg {
-    background-image: url("./imgs/animation/img1.jpg");
+    background-image: url("/assets/imgs/animation/img1.jpg");
     background-repeat: no-repeat;
     width: 100%;
     height: 100vh;
@@ -31,13 +36,13 @@ p {
 }
 
 @keyframes animation {
-    0%   { background-image: url("./imgs/animation/img1.jpg");}
-    15%  { background-image: url("./imgs/animation/img2.jpg");}
-    35%  { background-image: url("./imgs/animation/img3.jpg");}
-    50%  { background-image: url("./imgs/animation/img4.jpg");}
-    70%  { background-image: url("./imgs/animation/img5.jpg");}
-    85%  { background-image: url("./imgs/animation/img6.jpg");}
-    100% { background-image: url("./imgs/animation/img7.jpg");}
+    0%   { background-image: url("/assets/imgs/animation/img1.jpg");}
+    15%  { background-image: url("/assets/imgs/animation/img2.jpg");}
+    35%  { background-image: url("/assets/imgs/animation/img3.jpg");}
+    50%  { background-image: url("/assets/imgs/animation/img4.jpg");}
+    70%  { background-image: url("/assets/imgs/animation/img5.jpg");}
+    85%  { background-image: url("/assets/imgs/animation/img6.jpg");}
+    100% { background-image: url("/assets/imgs/animation/img7.jpg");}
 
 }
 
@@ -80,7 +85,7 @@ p {
 }
 
 .my-button-colorless {
-    background-color: #ffffff;
+    background-color: rgba(0, 0, 0, 0);
     border: 2px solid #68ad43;
 }
 
@@ -166,10 +171,10 @@ p {
 .slogan h3 {
     text-align: center;
     text-transform: uppercase;
-    font-size: 2.1em;
-    line-height: 1.5em;
-    letter-spacing: 0.1em;
-    font-weight: 400;
+    font-size: 38px;
+    line-height: 55px;
+    letter-spacing: 1px;
+    font-weight: 600;
 }
 
 .buttons {
@@ -417,14 +422,20 @@ p {
 
 
 @media only screen and (min-width: 272px) and (max-width: 376px){
+    .nav section {
+        display: inline-block;
+        margin: 0em;
+        font-size: 13px;
+    }
+    
     .buttons {
-        margin-top: 1em;
+        margin-top: 0.5em;
     }
 
     .slogan h3 {
-        margin-bottom: 1em;
-        font-size: 1.6em;
-        line-height: 1.4em;
+        margin-bottom: 0.5em;
+        font-size: 1.5em;
+        line-height: 1.3em;
     }
 
     .info h4 {
@@ -440,7 +451,50 @@ p {
     }
 }
 
+@media only screen and (max-width: 320px){
+    .nav section {
+        display: inline-block;
+        margin: 0em;
+        font-size: 13px;
+    }
+
+    .nav-image img{
+        max-width: 13em;
+        margin: 2em 5em 0em 3em;
+    }
+    
+    
+    .buttons {
+        margin-top: 0.5em;
+    }
+
+    .slogan h3 {
+        margin-bottom: 0em;
+        font-size: 1.3em;
+        line-height: 1.2em;
+    }
+
+    .info h4 {
+        margin-top: 2em;
+        margin-bottom: 0em;
+        font-size: 1.3em;
+        line-height: 1em;
+    }
+
+
+    .display-col {
+        margin: 1em 2em;
+    }
+}
+
+
 @media only screen and (min-width: 0) and (max-width: 272) {
+    .nav section {
+        display: inline-block;
+        margin-left: 0em;
+        font-size: 13px;
+    }
+
     .slogan {
         margin-top: 2em;
         margin-left: 2em;
