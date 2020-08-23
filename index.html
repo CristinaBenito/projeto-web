@@ -12,6 +12,9 @@
     <link rel="stylesheet" href="./assets/fonts/fontawesome-web/css/all.css" />
     <link rel="stylesheet" href="./assets/fonts/font-lato/Lato-Regular.ttf" />
     <link rel="shortcut icon" href="./assets/imgs/favicon.ico" />
+    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+    <script src="./assets/js/index.js"></script>
 </head>
 
 <body>
@@ -48,7 +51,20 @@
                             </ul>
 
                             <ul>
-                                <li><button class="my-button my-button-colorless nav-button text-white">ENTRAR</button></li>
+                                <li><button class="my-button my-button-colorless nav-button text-white" id="myBtn">ENTRAR</button>
+                                    <div id="myModal" class="modal">
+
+                                        <div class="modal-content">
+                                            <span class="close">&times;</span>
+                                            <form action="/action_page.php">
+                                                <input type="text" id="user" value="" placeholder="Usuário">
+                                                <input type="text" id="key" value="" placeholder="Senha">
+                                                <input type="submit" value="Entrar">
+                                            </form>
+                                        </div>
+
+                                    </div>
+                                </li>
                             </ul>
                             <a class="icon">
                                 <i class="fa fa-bars fa-3x"></i>
