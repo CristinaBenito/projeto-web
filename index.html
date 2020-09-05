@@ -10,10 +10,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="stylesheet" href="./assets/fonts/fontawesome-web/css/all.css" />
-    <link rel="stylesheet" href="./assets/fonts/font-lato/Lato-Regular.ttf" />
+    <!-- <link rel="stylesheet" href="./assets/fonts/font-lato/Lato-Regular.ttf" /> -->
     <link rel="shortcut icon" href="./assets/imgs/favicon.ico" />
-    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
-    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="./assets/js/index.js"></script>
 </head>
 
@@ -21,9 +20,10 @@
     <div class="container">
         <div class="bg">
             <div class="bg-mask">
+
                 <header>
                     <nav class="nav my-flex my-justify-content-space-around text-white my-width-100">
-                        <section class="nav-image">
+                        <section id="teste" class="nav-image">
                             <img src="./assets/imgs/logo-caffeex.png">
 
                             <ul class="my-hover">
@@ -51,27 +51,19 @@
                             </ul>
 
                             <ul>
-                                <li><button class="my-button my-button-colorless nav-button text-white" id="myBtn">ENTRAR</button>
-                                    <div id="myModal" class="modal">
-
-                                        <div class="modal-content">
-                                            <span class="close">&times;</span>
-                                            <form action="/action_page.php">
-                                                <input type="text" id="user" value="" placeholder="Usuário">
-                                                <input type="text" id="key" value="" placeholder="Senha">
-                                                <input type="submit" value="Entrar">
-                                            </form>
-                                        </div>
-
-                                    </div>
+                                <li><button class="my-button my-button-colorless nav-button text-white" id="myBtn"
+                                        onclick="abrir()">ENTRAR</button>
                                 </li>
                             </ul>
-                            <a class="icon">
-                                <i class="fa fa-bars fa-3x"></i>
-                            </a>
+                            <section class="icon">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </section>
                         </section>
                     </nav>
                 </header>
+
 
                 <div class="principal my-flex my-justify-content-center my-flex-column my-align-items-center my-width-100">
                     <div class="slogan">
@@ -91,6 +83,15 @@
                 </div>
             </div>
         </div>
+        <section>
+            <div class="buscar">
+                <input type="text" placeholder="Buscar" class="search" id="campo-buscar">
+                <button class="mySeach" onclick="buscar()">Buscar</button>
+                <div>
+                    <ul id="lista-resultados"></ul>
+                </div>
+            </div>
+        </section>
 
         <div class="slogan-trader my-flex my-justify-content-center my-flex-column my-align-items-center my-width-100">
             <div class="info">
@@ -145,7 +146,31 @@
         <footer>
 
         </footer>
+        <div id="myModal" class="modal">
+
+            <div class="modal-content">
+                <span class="close" onclick="fechar()">&times;</span>
+                <div id="tela-login">
+                    <div id="painel-erro-login" class="painel-cadastro">
+                    </div>
+                    <input type="email" id="user" placeholder="email@host.com">
+                    <input type="text" id="key" placeholder="Senha">
+                    <button class="myBtn" onclick="entrar()">Entrar</button>
+                    <button class="myBtn" onclick="abrirCadastro()">Cadastrar</button>
+                </div>
+                <div id="tela-cadastro">
+                    <div id="painel-erro-cadastro" class="painel-cadastro">
+                    </div>
+                    <input type="email" id="cadastro-user" placeholder="email@host.com">
+                    <input type="text" id="cadastro-senha" placeholder="Senha">
+                    <input type="text" id="cadastro-confirma-senha" placeholder="Confirmar Senha">
+                    <button class="myBtn" onclick="cadastrar()">Cadastrar</button>
+                </div>
+            </div>
+
+        </div>
     </div>
+
 </body>
 
 </html>

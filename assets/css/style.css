@@ -12,6 +12,27 @@ p {
     font-size: 1.1em;
 }
 
+/*#teste {
+    width: 100%;
+    height: 16%;
+    top: 0px;
+    position: fixed;
+    background: rgb(255, 255, 255) none repeat scroll 0% 0%;
+    box-shadow: rgba(0, 0, 0, 0.47) 0px 7px 24px -11px;
+    transition: all 0.3s ease 0s;
+    z-index: 9999;
+    display: block;
+    outline: none;
+}
+
+#teste ul {
+    color: #000000;
+}
+
+#teste ul li button {
+    color: #000000;
+} */
+
 .container {
     max-width: auto;
     margin: 0 auto;
@@ -52,17 +73,24 @@ p {
 .nav {
     margin: 0 auto;
 }
+
 .nav section {
     display: inline-block;
     font-size: 13px;
 }
 
-.nav section a{
-    background: #383838;
+section .icon{
+    float: right;
+    margin: 2em 1em;
+    cursor: pointer;
+}
+
+.icon div{
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0;
     display: none;
-    position: absolute;
-    right: 1em;
-    top: 1em;
 }
 
 .nav section ul {
@@ -88,7 +116,7 @@ p {
 
 .nav-image img{
     max-width: 13em;
-    margin: 3em 7em 0em 0em;
+    margin: 1em 7em 0em 0em;
 }
 
 .my-button {
@@ -264,17 +292,8 @@ p {
         display: none;
     }
 
-    .nav section a{
-        background: #383838;
+    .icon div {
         display: block;
-        position: absolute;
-        right: 1em;
-        top: 1em;
-    }
-
-    .icon i:hover {
-        background: #383838;
-        color: #68ad43;
     }
 
     .principal {
@@ -314,12 +333,8 @@ p {
         display: none;
     }
 
-    .nav section a{
-        background: #383838;
+    .icon div {
         display: block;
-        position: absolute;
-        right: 1em;
-        top: 1em;
     }
     
     .nav-image img{
@@ -365,12 +380,8 @@ p {
         display: none;
     }
 
-    .nav section a{
-        background: #383838;
+    .icon div {
         display: block;
-        position: absolute;
-        right: 1em;
-        top: 1em;
     }
 
     .principal {
@@ -407,12 +418,8 @@ p {
         display: none;
     }
 
-    .nav section a{
-        background: #383838;
+    .icon div {
         display: block;
-        position: absolute;
-        right: 1em;
-        top: 1em;
     }
 
     .principal {
@@ -449,12 +456,9 @@ p {
         display: none;
     }
 
-    .nav section a{
-        background: #383838;
+   
+    .icon div {
         display: block;
-        position: absolute;
-        right: 1em;
-        top: 1em;
     }
 
     .principal {
@@ -467,12 +471,8 @@ p {
         display: none;
     }
 
-    .nav section a{
-        background: #383838;
+    .icon div {
         display: block;
-        position: absolute;
-        right: 1em;
-        top: 1em;
     }
 
     .nav-image img{
@@ -509,12 +509,8 @@ p {
         display: none;
     }
 
-    .nav section a{
-        background: #383838;
+    .icon div {
         display: block;
-        position: absolute;
-        right: 1em;
-        top: 1em;
     }
 
     .buttons {
@@ -546,12 +542,9 @@ p {
         display: none;
     }
 
-    .nav section a{
-        background: #383838;
+    
+    .icon div {
         display: block;
-        position: absolute;
-        right: 1em;
-        top: 1em;
     }
 
     .buttons {
@@ -582,12 +575,8 @@ p {
         display: none;
     }
 
-    .nav section a{
-        background: #383838;
+    .icon div {
         display: block;
-        position: absolute;
-        right: 1em;
-        top: 1em;
     }
 
     .buttons {
@@ -619,12 +608,9 @@ p {
         display: none;
     }
 
-    .nav section a{
-        background: #383838;
+    .icon div {
         display: block;
-        position: absolute;
-        right: 1em;
-        top: 1em;
+        text-align: end;
     }
 
     .slogan {
@@ -706,6 +692,16 @@ p {
     cursor: pointer;
   }
 
+  input[type=email], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
   input[type=text], select {
     width: 100%;
     padding: 12px 20px;
@@ -716,11 +712,10 @@ p {
     box-sizing: border-box;
   }
   
-  input[type=submit] {
+  button.myBtn {
     width: 100%;
     border: 2px solid #68ad43;
     background-color:#67AD44; 
-    color: #ffffff;
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
@@ -730,9 +725,50 @@ p {
     font-size: 14px;
   }
   
-  input[type=submit]:hover {
+  button.myBtn:hover {
     background-color: #45a049;
     color: #000000;    
   } 
+
+.buscar {
+    width: 100%;
+}
   
+input.search {
+    width: 70%;
+    margin-left: 4%;
+    margin-top: 3em;
+    border: 2px solid #68ad43;
+    background-color:#ffffff; 
+    color: #000000;
+    padding: 14px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button.mySeach {
+    width: 20%;
+    border: 2px solid #68ad43;
+    background-color:#67AD44; 
+    color: white;
+    padding: 16px 20px;
+    margin: 8px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+  }
   
+  button.mySeach:hover {
+    background-color: #45a049;
+    color: #000000;    
+  } 
+
+.my-list-item {
+    height: 30px;
+}
+
+.painel-cadastro {
+    color: orangered;
+}
