@@ -60,6 +60,7 @@ function cadastrar() {
 
 function buscar() {
     let campoBusca = document.getElementById('campo-buscar').value;
+    document.getElementById('lista-resultados').innerHTML = '';
     axios.get(`https://api.tvmaze.com/search/shows?q=${campoBusca}`)
         .then((resposta) => {
             let lista = resposta.data;
@@ -69,9 +70,13 @@ function buscar() {
             for (let i = 0; i < lista.length; i++) {
                 let li = document.createElement('li');
                 let texto = lista[i].show.name;
-                li.innerHTML = texto;
-                li.className = 'display-col my-flex my-justify-content-between my-list-item';
+                li.className = 'display-col my-flex my-justify-content-between';
                 containerLista.appendChild(li);
+                let link = document.createElement('a');
+                link.setAttribute('href', lista[i].show.officialSite);
+                link.innerHTML = texto;
+                link.className = 'my-link'
+                li.appendChild(link);
             }
         })
 }

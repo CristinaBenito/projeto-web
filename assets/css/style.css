@@ -735,8 +735,8 @@ section .icon{
 }
   
 input.search {
-    width: 70%;
-    margin-left: 4%;
+    width: 65%;
+    margin-left: 8%;
     margin-top: 3em;
     border: 2px solid #68ad43;
     background-color:#ffffff; 
@@ -748,7 +748,7 @@ input.search {
 }
 
 button.mySeach {
-    width: 20%;
+    width: 18%;
     border: 2px solid #68ad43;
     background-color:#67AD44; 
     color: white;
@@ -766,9 +766,16 @@ button.mySeach {
   } 
 
 .my-list-item {
-    height: 30px;
+    height: 200px;
+    width: 90%;
+    overflow: auto;
+   
 }
 
 .painel-cadastro {
     color: orangered;
+}
+
+.my-link {
+    text-decoration: none;
 }
