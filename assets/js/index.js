@@ -60,7 +60,7 @@ function cadastrar() {
 
 function buscar() {
     let campoBusca = document.getElementById('campo-buscar').value;
-    axios.get(`http://api.tvmaze.com/search/shows?q=${campoBusca}`)
+    axios.get(`https://api.tvmaze.com/search/shows?q=${campoBusca}`)
         .then((resposta) => {
             let lista = resposta.data;
             console.log(lista)
