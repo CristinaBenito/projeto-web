@@ -6,6 +6,13 @@ function abrir() {
 
 function fechar() {
     document.getElementById('myModal').style.display = 'none';
+    document.getElementById('user').value = '';
+    document.getElementById('key').value = '';
+    document.getElementById('cadastro-user').value = '';
+    document.getElementById('cadastro-senha').value = '';
+    document.getElementById('cadastro-confirma-senha').value = '';
+    document.getElementById('painel-erro-login').style.display = 'none';
+    document.getElementById('painel-erro-cadastro').style.display = 'none';
 }
 
 function entrar() {
@@ -23,11 +30,11 @@ function entrar() {
             let token = (resposta.data.token);
             localStorage.setItem('token', token);
             fechar();
+            document.getElementById('busca').style.display = 'block'
         }).catch((erro) => {
             alert("Usuário não cadastrado!")
         })
     }
-
 }
 
 function abrirCadastro() {
@@ -79,5 +86,12 @@ function buscar() {
                 li.appendChild(link);
             }
         })
+}
+
+function verificarLogin() {
+    let token = localStorage.getItem('token');
+    if (token !== null) {
+        document.getElementById('busca').style.display = 'block';
+    }
 }
 

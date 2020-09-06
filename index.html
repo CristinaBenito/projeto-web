@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8" />
@@ -16,7 +16,7 @@
     <script src="./assets/js/index.js"></script>
 </head>
 
-<body>
+<body onload="verificarLogin()">
     <div class="container">
         <div class="bg">
             <div class="bg-mask">
@@ -84,7 +84,7 @@
             </div>
         </div>
         <section>
-            <div class="buscar">
+            <div class="buscar" id="busca">
                 <input type="text" placeholder="Buscar" class="search" id="campo-buscar">
                 <button class="mySeach" onclick="buscar()">Buscar</button>
                 <div class="my-list-item">
