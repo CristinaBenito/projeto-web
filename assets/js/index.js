@@ -31,8 +31,9 @@ function entrar() {
             localStorage.setItem('token', token);
             fechar();
             document.getElementById('busca').style.display = 'block'
+            document.getElementById('user-icon').style.display = 'inline'
         }).catch((erro) => {
-            alert("Usuário não cadastrado!")
+            document.getElementById('painel-erro-login').innerHTML = 'Usuário não cadastrado!'
         })
     }
 }
@@ -58,9 +59,11 @@ function cadastrar() {
             email: usuario,
             password: senha,
         }).then((resposta) => {
+            document.getElementById('painel-sucesso-login').innerHTML = 'Cadastro realizado com Sucesso! Faça seu login.'
             fechar();
+            abrir();
         }).catch((erro) => {
-            alert("Tente Novamente!")
+            document.getElementById('painel-erro-cadastro').innerHTML = 'Tente Novamente!'
         })
     }
 }
@@ -80,10 +83,22 @@ function buscar() {
                 li.className = 'display-col my-flex my-justify-content-between';
                 containerLista.appendChild(li);
                 let link = document.createElement('a');
+                let categoria = document.createElement('span');
+                let imagem = document.createElement('img');
                 link.setAttribute('href', lista[i].show.officialSite);
                 link.innerHTML = texto;
+                categoria.innerHTML = lista[i].show.type;
+                if (lista[i].show.image) {
+                    if (lista[i].show.image.medium) {
+                        imagem.setAttribute('src', lista[i].show.image.medium);
+                    } else {
+                        imagem.setAttribute('src', lista[i].show.image.original);
+                    }
+                }
                 link.className = 'my-link'
                 li.appendChild(link);
+                li.appendChild(categoria);
+                li.appendChild(imagem);
             }
         })
 }
@@ -92,6 +107,13 @@ function verificarLogin() {
     let token = localStorage.getItem('token');
     if (token !== null) {
         document.getElementById('busca').style.display = 'block';
+        document.getElementById('user-icon').style.display = 'inline';
     }
 }
 
+function deslogar() {
+    localStorage.removeItem('token');
+    document.getElementById('busca').style.display = 'none';
+    document.getElementById('user-icon').style.display = 'none';
+
+}

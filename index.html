@@ -53,6 +53,7 @@
                             <ul>
                                 <li><button class="my-button my-button-colorless nav-button text-white" id="myBtn"
                                         onclick="abrir()">ENTRAR</button>
+                                        <i class="fas fa-user fa-2x" onclick="deslogar()" id="user-icon"></i>
                                 </li>
                             </ul>
                             <section class="icon">
@@ -88,7 +89,7 @@
                 <input type="text" placeholder="Buscar" class="search" id="campo-buscar">
                 <button class="mySeach" onclick="buscar()">Buscar</button>
                 <div class="my-list-item">
-                    <ul id="lista-resultados"></ul>
+                    <ul id="lista-resultados" class="show-image"></ul>
                 </div>
             </div>
         </section>
@@ -153,6 +154,7 @@
                 <div id="tela-login">
                     <div id="painel-erro-login" class="painel-cadastro">
                     </div>
+                    <div id="painel-sucesso-login" class="painel-sucesso"></div>
                     <input type="email" id="user" placeholder="email@host.com">
                     <input type="text" id="key" placeholder="Senha">
                     <button class="myBtn" onclick="entrar()">Entrar</button>
